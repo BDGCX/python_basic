@@ -107,13 +107,20 @@ Series类、DataFrame类……
 
 通过点号访问类的属性和方法，变量名称
 以及数据集的行列名都不要有点号
-1.定义一个human类 class human()
+1.定义一个类 class obj()
+class human: #定义一个human类 
+    def __init__(self,name,height,weight):#定义对象的属性
+        self.name=name
+        self.height=height
+        self.weight=weight
+    def shot(self):#定义对象的方法
+        print(self.name,'slam dunk')
 2.实例化一个对象 Jordan=human()
+Jordan=human('Jordan', 188, 90)
 3.访问对象的属性
 height=Jordan.height
 weight=Jordan.weight
 4.访问对象的方法
-jump=Jordan.jump()
 shot=Jordan.shot()
 
 '''
